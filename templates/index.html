@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Recommender</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" > -->
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-wrapper">
+        <div class="banner">
+          <h1>Hello!</h1>
+          <p>Enter your details</p>
+          <p>to continue to our application</p>
+        </div>
+        <div class="green-bg">
+          <t style="position:relative; left:80px; top: 3px; color: aliceblue; font-size: 45px">Food Recommender App</t>
+          <button type="button" href=signup-form>Login</button>
+        </div>
+        <div id="signup-form">
+        <form action="http://127.0.0.1:5000/result" method="post" class="signup-form">
+          <p>Use your Email for login</p>
+          <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="Email" name="email" />
+          </div>
+          <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" name="pass" />
+          </div>
+          <button type="button" id="submitButton">Login</button>
+           <!-- </form> -->
+           
+          <p> New user? Sign up...</p>
+          <!-- <form action="/signup"> -->
+          <a style="width: 16rem;
+          height: 5rem;
+          background-color: #0072A0;
+          border: none;
+          border-radius: 3rem;
+          text-transform: uppercase;
+          letter-spacing: 0.1rem;
+          color: #fff;
+          margin-top: 3rem;
+          cursor: pointer" type="button" href="http://127.0.0.1:5000/signup">Sign Up</a>
+        </form>
+      </div>
+      </div>
+    </div>
+  <script src="{{ url_for('static', filename = 'script.js') }}"></script>
+        
+  </body>
+</html>
