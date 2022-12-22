@@ -21,3 +21,8 @@ pip install flask
 The server starts by default on http://127.0.0.1:5000/
 
 ## Screenshots
+![SignupLogin](screenshots/signup.png)
+![Login](screenshots/login.png)
+![forms](screenshots/form1.png)
+![forms](screenshots/form2.png)
+![meals](screenshots/mealRecommendations.png)
